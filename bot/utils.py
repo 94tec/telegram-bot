@@ -1,14 +1,14 @@
-import os
+# bot/utils.py
+
 import logging
+import os
 from bot.config import LOG_FILE_PATH
 
-# Create logs directory if it doesn't exist
-logs_dir = os.path.dirname(LOG_FILE_PATH)
-os.makedirs(logs_dir, exist_ok=True)
-
 def setup_logging():
-    log_directory = os.path.dirname(LOG_FILE_PATH)
-    os.makedirs(log_directory, exist_ok=True)
+    log_dir = os.path.dirname(LOG_FILE_PATH)
+    if not os.path.exists(log_dir):
+        os.makedirs(log_dir)
+
     logging.basicConfig(
         filename=LOG_FILE_PATH,
         level=logging.INFO,

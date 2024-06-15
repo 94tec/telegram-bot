@@ -1,5 +1,4 @@
 bot/config.py
-requirements.txt
 data/data.xlsx
 tests
 venv
