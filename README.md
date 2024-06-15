@@ -66,8 +66,8 @@ telegram bot service/
     BOT_TOKEN = 'your-telegram-bot-token'
     CHAT_ID = 'your-chat-id'
     EXCEL_FILE_PATH = 'path/to/your/data.xlsx'
-    CHECK_INTERVAL = 1  # Check interval in minutes
-    LOG_FILE_PATH = 'C:/94tecprocs/telegram bot service/logs/bot.log'
+    CHECK_INTERVAL = 3600  # Check interval in 1 hr
+    LOG_FILE_PATH = 'path/to/your//logs/bot.log'
     ```
 
 5. **Ensure the data and logs directories exist:**
@@ -110,34 +110,6 @@ Copy code
 # Telegram Bot Service
 
 This project is a Telegram bot service that monitors changes in an Excel file and sends notifications via Telegram when new data is added or existing data is modified.
-
-## Project Structure
-
-telegram_bot/
-├── bot/
-│ ├── init.py
-│ ├── config.py
-│ ├── main.py
-│ ├── excel_monitor.py
-│ ├── telegram_notifier.py
-│ └── utils.py
-├── data/
-│ └── data.xlsx
-├── logs/
-│ └── bot.log
-├── tests/
-│ ├── init.py
-│ ├── test_excel_monitor.py
-│ ├── test_telegram_notifier.py
-│ └── test_utils.py
-├── venv/
-│ └── ... (virtual environment files)
-├── .gitignore
-├── requirements.txt
-└── README.md
-
-r
-Copy code
 
 ## Requirements
 
